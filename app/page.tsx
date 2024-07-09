@@ -1,5 +1,6 @@
-import PatienfForm from "@/components/forms/PatienfForm";
+import PatientForm from "@/components/forms/PatientForm";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -14,7 +15,15 @@ export default function Home() {
             alt="patient"
             className="mb-12 h-10 w-fit" 
           />
-          <PatienfForm />
+          <PatientForm />
+          <div className="text-14-regular flex mt-20 justify-between">
+            <p className="justify-items-end text-dark-600 xl:text-left">
+              © 2024 health haven
+            </p>
+            <Link href="/?admin=true" className="text-green-500">
+              Admin
+            </Link>
+          </div>
         </div>
       </section>
     </div>
