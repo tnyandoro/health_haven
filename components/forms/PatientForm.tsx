@@ -43,9 +43,36 @@ export const PatientForm = () => {
           <h1 className="header">Hi there 🖐</h1>
           <p className="text-dark-700"> Schedule your appointment</p>
         </section>
+
         <CustomFormField
           fieldType={FormFieldType.INPUT}
-          control={form.control} name={"name"} label={"Full name"} placeholder={"John Doe"} iconSrc={"/assets/icons/user.svg"} iconAlt={"user"}        />
+          control={form.control} 
+          name={"name"} 
+          label={"Full name"} 
+          placeholder={"John Doe"} 
+          iconSrc={"/assets/icons/user.svg"} 
+          iconAlt={"user"}        
+          />
+
+        <CustomFormField
+          fieldType={FormFieldType.INPUT}
+          control={form.control} 
+          name={"email"} 
+          label={"Email"} 
+          placeholder={"Johndoe@gmail.com"} 
+          iconSrc={"/assets/icons/email.svg"} 
+          iconAlt={"email"}        
+          />
+
+        <CustomFormField
+          fieldType={FormFieldType.PHONE_INPUT}
+          control={form.control} 
+          name={"phone"} 
+          label={"Phone number"} 
+          placeholder={"(079) 782-1234"} 
+        
+          />
+
         <Button type="submit">Submit</Button>
       </form>
     </Form>
