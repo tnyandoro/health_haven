@@ -29,9 +29,15 @@ interface CustomProps {
     children?: React.ReactNode,
     renderSelecton?: (field: any) => React.ReactNode,
 
+}
 
-
-
+const renderInput = () => {
+    return (
+        <Input 
+        type="text"
+        placeholder="John Doe"
+        />
+    )
 }
 
 const CustomFormField = ({ control, fieldType, name, label }: CustomProps) => {
